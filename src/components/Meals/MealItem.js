@@ -1,3 +1,5 @@
+import MealItemForm from './MealItemForm';
+
 const MealItem = (props) => {
   const price = `$${props.price.toFixed(2)}`;
 
@@ -9,6 +11,9 @@ const MealItem = (props) => {
           <div className='italic text-sm'>{props.description}</div>
         </div>
         <div className='mt-1 ml-10 font-bold text-xl'>{price}</div>
+      </div>
+      <div>
+        <MealItemForm id={props.id} />
       </div>
     </li>
   );
