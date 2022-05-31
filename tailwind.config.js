@@ -5,6 +5,7 @@ module.exports = {
     colors: {
       'very-peri': {
         DEFAULT: '#6068B2',
+        bg: 'rgba(0, 0, 0, 0.75)',
         50: '#FFFFFF',
         100: '#F7F8FB',
         200: '#D1D4E9',
