@@ -41,7 +41,7 @@ const AvailableMeals = () => {
   return (
     <section className='flex flex-col items-center bg-very-peri-200'>
       <Card>
-        <ul className='m-0 p-0 list-none'>{mealsList}</ul>
+        <ul className=''>{mealsList}</ul>
       </Card>
     </section>
   );

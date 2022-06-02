@@ -2,7 +2,7 @@ import Input from '../UI/Input';
 
 const MealItemForm = (props) => {
   return (
-    <form className='text-right pr-3'>
+    <form className='text-right'>
       <Input
         label='Amount'
         input={{
@@ -14,7 +14,7 @@ const MealItemForm = (props) => {
           defaultValue: '1',
         }}
       />
-      <button className='border rounded-3xl bg-very-peri-400  hover:bg-very-peri-500 text-very-peri-100 font-bold px-5 py-0'>
+      <button className='border rounded-3xl bg-very-peri-400  hover:bg-very-peri-500 text-very-peri-100 font-bold px-8 py-1'>
         + Add
       </button>
     </form>
