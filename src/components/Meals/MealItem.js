@@ -8,7 +8,7 @@ const MealItem = (props) => {
       <div>
         <h3 className='mb-1 font-bold'>{props.name}</h3>
         <div className='italic text-sm'>{props.description}</div>
-        <div className='mt-1 ml-10 font-bold text-xl'>{price}</div>
+        <div className='mt-1 font-bold text-l'>{price}</div>
       </div>
       <div>
         <MealItemForm id={props.id} />
