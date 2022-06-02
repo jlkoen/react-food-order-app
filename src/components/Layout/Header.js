@@ -1,15 +1,16 @@
 import { Fragment } from 'react';
+
 import { FaReact } from 'react-icons/fa';
 import mealsImage from '../../assets/meals.jpg';
 import HeaderCartButton from './HeaderCartButton';
 
-function Header() {
+function Header(props) {
   return (
     <Fragment>
-      <header className='flex relative space-x-3 text-white text-3xl bg-red-400 font-semibold px-3 py-4 left-0 top-0'>
+      <header className='flex relative space-x-3 text-very-peri-50 text-3xl bg-very-peri-800 font-semibold px-3 py-4 left-0 top-0'>
         <FaReact />
         <h1>React Meals</h1>
-        <HeaderCartButton />
+        <HeaderCartButton onClick={props.onShowCart} />
       </header>
       <div className='w-full h-80'>
         <img
