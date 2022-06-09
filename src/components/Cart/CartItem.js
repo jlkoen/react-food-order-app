@@ -4,11 +4,13 @@ const CartItem = (props) => {
   const price = `$${props.price.toFixed(2)}`;
   return (
     //TODO: add CSS classes
-    <li className='flex p-4 m-4 justify-between align-middle border-b border-very-peri-500'>
+    <li className='flex p-4 m-4 border-b border-very-peri-500'>
       <div>
         <h2>{props.name}</h2>
-        <div className='flex w-40 justify-between align-middle'>
-          <span className='font-bold text-very-peri-600'>{price}</span>
+        <div className='flex w-40 space-x-4'>
+          <span className='font-bold align-text-bottom px-1 text-center text-very-peri-600'>
+            {price}
+          </span>
           <span className='font-bold text-very-peri-600 border-2 border-very-peri-200 py-1 px-3 rounded-md'>
             x{props.amount}
           </span>
